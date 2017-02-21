@@ -60,7 +60,7 @@ graph TD;
 
 
 {% mermaid %}
- graph TD
+ graph TD;
   subgraph Ground  Station
   gnd[ROS Enabled Computer] --- qgc[qGroundControl];
   end
