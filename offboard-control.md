@@ -60,15 +60,15 @@ graph TD;
 
 
 {% mermaid %}
-        graph TD;
-          subgraph Ground  Station
-	  gnd[ROS Enabled Computer] --- qgc[qGroundControl]
-	end;
+ graph TD;
+  subgraph Ground  Station
+	  gnd[ROS Enabled Computer] --- qgc[qGroundControl];
+	end
 	gnd --MAVLink/UDP--> w[WiFi];
 	qgc --MAVLink--> w;
 	subgraph Vehicle
-	  comp[Companion Computer] --MAVLink--> uart[UART Adapter]
-	uart --- Autopilot
-	end;
+	  comp[Companion Computer] --MAVLink--> uart[UART Adapter];
+	uart --- Autopilot;
+	end
 	w --- comp;
 {% endmermaid %}
