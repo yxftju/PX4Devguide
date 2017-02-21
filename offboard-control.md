@@ -60,8 +60,8 @@ graph TD;
 
 
 {% mermaid %}
-	graph TD;
-	subgraph Ground  Station
+        graph TD;
+          subgraph Ground  Station
 	  gnd[ROS Enabled Computer] --- qgc[qGroundControl]
 	end;
 	gnd --MAVLink/UDP--> w[WiFi];
