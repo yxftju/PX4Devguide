@@ -61,9 +61,7 @@ graph TD;
 
 {% mermaid %}
  graph TD;
- submodule Ground_Station
    gnd[ROS Enabled Computer] --- qgc[qGroundControl];
- end
   gnd --MAVLink/UDP--> w[WiFi];
   qgc --MAVLink--> w;
   comp[Companion Computer] --MAVLink--> uart[UART Adapter];
